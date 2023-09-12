@@ -1,0 +1,15 @@
+.gpt4-brand {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.gpt4-brand div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    margin: 1rem;
+
+}

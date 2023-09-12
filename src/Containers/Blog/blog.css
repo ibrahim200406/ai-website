@@ -1,0 +1,144 @@
+:root {
+    --font-family: 'Manrope', sans-serif;
+
+    --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+
+    --color-bg: #040C18;
+    --color-footer: #031B34;
+    --color-blog: #042c54;
+    --color-text: #81AFDD;
+    --color-subtext: #FF8A71;
+}
+
+.gpt4-blog {
+    display: flex;
+    flex-direction: column;
+}
+
+.gpt4-blog-heading {
+    width: 100%;
+    text-align: left;
+    max-width: 80%;
+    margin-bottom: 5rem;
+}
+
+.gpt4-blog-heading h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04rem;
+}
+
+.gpt4-blog-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.gpt4-blog-container-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.gpt4-blog-container-group .gpt4-blog-container-article {
+    margin: 10px;
+}
+
+@media(max-width:991px) {
+    .gpt4-blog-container {
+        display: unset;
+    }
+
+    .gpt4-blog-heading {
+        max-width: 100%;
+    }
+
+
+    .gpt4-blog-container-group .gpt4-blog-container-article {
+        margin: 35px 0;
+    }
+
+}
+
+/* ! Responsive */
+@media(max-width:991px) {
+    .gpt4-blog-container-group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gpt4-blog-container-group .gpt4-blog-container-article {
+        margin: 10px;
+    }
+
+
+}
+
+@media(max-width:758px) {
+    .gpt4-blog-container-group {
+        display: flex;
+    }
+
+    .gpt4-blog-heading h1 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .gpt4-blog-heading {
+        margin-bottom: 0;
+    }
+
+    .gpt4-blog-container-group {
+        display: grid;
+        margin: 1rem 0;
+        flex-direction: column;
+    }
+
+    .gpt4-blog-container-group .gpt4-blog-container-article {
+        margin: 2px;
+    }
+
+    .gpt4-blog-container-article-content {
+
+        padding: 15px 10px;
+
+    }
+
+    .gpt4-blog-container-article-content p {
+        font-size: 10px;
+    }
+
+}
+
+@media(max-width:758px) {
+    .section_margin {
+        margin: 4rem;
+    }
+
+    .section_padding {
+        padding: 4rem;
+    }
+}
+
+@media(max-width:758px) {
+    .section_margin {
+        margin: 4rem;
+    }
+
+    .section_padding {
+        padding: 4rem;
+    }
+}
+
+@media(max-width:550px) {
+    .section_margin {
+        margin: 4rem 2rem;
+    }
+
+    .section_padding {
+        padding: 2rem;
+    }
+}
